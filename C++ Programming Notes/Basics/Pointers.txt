@@ -1,0 +1,52 @@
+%Pointers in c++
+*Pointers are variables that store the address of other variables
+[Note]=1.& =referance operator
+       2.* =dereferance operator
+
+*The variable and the pointer are connected to each other that means if you try to chane variable than the pointer also changes 
+
+% New operator
+* The keywrd "new" can only be use for pointers specifically
+
+* Using "new" we can creat a new value in a pointer variable
+[syntax]
+datatype* v_name = new                           datatype(value);
+
+* To creat an array just use "[]"
+instead of "()"
+
+* The memory allocated using new must be explicitly deallocated using the delete keyword to avoid memory leaks.
+
+* It is generally recommended to use smart pointers instead of raw pointers allocated with new to simplify memory management and avoid memory leaks.
+
+% Delete operator
+The keyword "delete" can be used to delete the value inside a pointer wich is dynamically operated 
+[syntax]
+delete v_name;
+
+*it will only delete the value not the variable
+
+* to delete a block of memory like array or etc you have put "[]" infront of delelte keyword "delete[]"
+
+% Arrow operator(->)
+in pointers "->" operators are use to dereferance a pointer variable and use it for a function and etc;
+[sytax]
+pt_name->function_name();
+
+% Poiters to object
+* In c++ make a pointer of an object is very simple
+[syntax]
+1. class_name* pointer_name = &obj;
+2. class_name *pt_name = new                           class_name;
+
+% Pointers in array of objects
+* you can make an array of objects using pointers
+[syntax]
+class_name *pt_name = new                        class_name[size];
+* To move on one element to another you have to increament the pointer variable
+
+% Pointers to derived class
+* if you make a pointer_variable of base_class and make it point on the derived class.
+* if you call a function wich contain same name in both base and derived class with the pointer it will call the fuction of base class due to late binding
+[Note]
+In C++, late binding, also known as dynamic binding, is a mechanism that determines which function definition to call at runtime based on the object's actual type. This is in contrast to early binding (static binding), where the function call is resolved by the compiler at compile time.

@@ -1,0 +1,10 @@
+$
+%Reference variable
+In C++ we use (&) ampersent to repersent the reference variable
+[syntax]
+int a=0;
+int &b=a;
+%Constant variable
+we make a variable constant to fix its value during the whole execution
+[syntax]
+const a=0;

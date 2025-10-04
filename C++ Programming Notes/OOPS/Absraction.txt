@@ -1,0 +1,10 @@
+$
+%Absraction in OOP
+Hiding all unnecessary or private details & showing only the improtant parts
+[Expample]
+1.Access modifies
+%Absract classes
+1.Abstract clsses are used to provide a base class form which other classes can be derived
+2.They cannot be instantiated(object nhi bunnte inke)
+3.They made to be inherited only
+4.Abstract classes are typically used to define and interface for derived classes

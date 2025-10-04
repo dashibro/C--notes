@@ -1,0 +1,34 @@
+$
+The math header file in C++ is denoted by `<cmath>`. It provides various mathematical functions for tasks like trigonometry, exponential calculations, and numerical computations.
+%Here are some common functions in the `<cmath>` header file:
+1. *Trigonometric functions:*
+    - `sin()`: Sine
+    - `cos()`: Cosine
+    - `tan()`: Tangent
+    - `asin()`: Arc sine
+    - `acos()`: Arc cosine
+    - `atan()`: Arc tangent
+    - `atan2()`: Arc tangent with two arguments
+2. *Hyperbolic functions:*
+    - `sinh()`: Hyperbolic sine
+    - `cosh()`: Hyperbolic cosine
+    - `tanh()`: Hyperbolic tangent
+3. *Exponential and logarithmic functions:*
+    - `exp()`: Exponential
+    - `log()`: Natural logarithm
+    - `log10()`: Base-10 logarithm
+    - `pow()`: Power function (e.g., `pow(x, y)` is x raised to the power of y)
+4. *Rounding and remainder functions:*
+    - `ceil()`: Ceiling (rounds up to the nearest integer)
+    - `floor()`: Floor (rounds down to the nearest integer)
+    - `fmod()`: Floating-point remainder (similar to the `%` operator)
+5. *Absolute value and sign functions:*
+    - `abs()`: Absolute value (for integers and floating-point numbers)
+    - `fabs()`: Absolute value (for floating-point numbers only)
+    - `signbit()`: Returns true if the input is negative
+6. *Other functions:*
+    - `sqrt()`: Square root
+    - `cbrt()`: Cube root
+    - `hypot()`: Hypotenuse (Euclidean distance)
+    - `fmax()`: Maximum value (for two arguments)
+    - `fmin()`: Minimum value (for two arguments)

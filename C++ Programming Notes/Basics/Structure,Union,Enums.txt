@@ -1,0 +1,48 @@
+$
+% 1.Structures
+% 2.Unions
+% 3.Enums
+1.Structures:
+* these are the set of user difine datatypes in c++
+* you can use typedef keyword to give nickname to a structure
+Note=in c++ you can give nickname to a structure without using typedef too couse it is typedef by default
+% Creating a structue
+Note=you can creat a structure both inside and outside of the main function
+[syntax]
+struct struct_name{
+ datatype variable 1;
+ datatype variable 2;
+ .....and so on......}
+ Ex=struct student{
+ int id;
+ char name;
+ int age;
+ }
+% Giving values
+[synatax]
+stuct struct_name entry_name;
+entry_name.variable 1=value;
+entry_name.variable 2=value;
+..........and so on.........
+Ex=struct student shubh;
+   shubh.id=1;
+   shubh.age=18;
+   shubh.name="s";
+_________________________________
+%Union in C++:
+* It is kind of same as structure but you can use only one variable among the all at a time
+* Creating a union is same as structue but you have to use (union) instead of (struct)
+* putting values in a union is same as structure but you have to use (union) instead of (struct)
+* It is usefull for mentaining memory
+_________________________________
+% Enums
+* Enumeration(Enum) in c++ is a user defined data type that constants.it provides a way to define a collection of related values that your program can work with
+[syntax]
+enum meal {breakfast ,lounch,dinner}
+meal m1=lounch;
+cout<<m1;
+output=1 index
+cout<< breakfast;
+output=0
+cout<<dinner;
+output=2

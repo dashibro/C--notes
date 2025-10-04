@@ -1,0 +1,149 @@
+% Vector in STL
+In C++, a vector is a sequence container that represents a dynamic array. This means it's similar to a regular array, but with the key difference that its size can change automatically as you add or remove elements.
+
+%Key characteristics:
+ * Dynamic size: Vectors can grow or shrink as needed, unlike fixed-size arrays.
+ 
+ * Contiguous storage: Elements are stored in contiguous memory locations, allowing efficient random access.
+ 
+ * Automatic memory management: The vector handles memory allocation and deallocation internally.
+ 
+ * Iterators: You can use iterators to traverse elements efficiently.
+ 
+%Declaration and initialization:
+1. #include <vector>
+std::vector<int> numbers;
+// Empty vector of integers
+
+2. std::vector<std::string> names(5); 
+// Vector of 5 strings, initially empty
+
+3. std::vector<int> scores = {10, 20, 30}; 
+// Vector with initial values
+
+% Accessing elements:
+1. numbers[0] = 42; // Accessing the first element
+
+2. int size = numbers.size(); // Get the number of elements
+
+% Adding and removing elements:
+1. numbers.push_back(50); // Add an element at the end
+
+2. numbers.pop_back(); // Remove the last element
+
+3. numbers.insert(numbers. begin() + 2, 35); // Insert at a specific position
+
+4. numbers.erase(numbers. begin()); // Remove the first element
+
+* Other common operations:
+1. numbers.clear(); // Remove all elements
+
+2. bool empty = numbers.empty(); // Check if the vector is empty
+
+[Example]
+#include <iostream>
+#include <vector>
+
+int main() {
+    std::vector<int> numbers = {2, 5, 1, 9, 3};// Sort the vector
+    
+    std::sort(numbers.begin(), numbers.end());
+
+    // Print the sorted vector
+    for (int num : numbers) {
+        std::cout << num << " ";
+    }
+    std::cout << std::endl;
+
+    return 0;
+}
+
+% Vector Methods in C++
+C++ vectors offer a rich set of methods for manipulating and accessing their elements.
+
+Here's a comprehensive overview:
+% Capacity
+ * size(): Returns the number of elements in the vector.
+ 
+ * max_size(): Returns the maximum number of elements a vector can hold.
+ 
+ * capacity(): Returns the number of elements the vector can hold without allocating more memory.
+ 
+ * empty(): Returns true if the vector is empty, false otherwise.
+ 
+ * reserve(n): Requests that the vector capacity be at least enough to contain n elements.
+ 
+ * shrink_to_fit(): Reduces the capacity of the vector to fit its size.
+ 
+% Element Access
+ * operator[]: Returns a reference to the element at a given position (unchecked).
+ 
+ * at(index): Returns a reference to the element at a given position (checked).
+ 
+ * front(): Returns a reference to the first element.
+ 
+ * back(): Returns a reference to the last element.
+ 
+ * data(): Returns a pointer to the array of elements.
+ 
+% Modifiers
+ * assign(n, val): Assigns new values to all elements in the vector.
+ 
+ * push_back(val): Adds an element to the end of the vector.
+ 
+ * pop_back(): Removes the last element from the vector.
+ 
+ * insert(pos, val): Inserts an element at a given position.
+ 
+ * erase(pos): Removes the element at a given position.
+ 
+ * clear(): Removes all elements from the vector.
+ 
+ * emplace_back(args): Constructs an element at the end of the vector using provided arguments.
+ 
+ * emplace(pos, args): Constructs an element at a given position using provided arguments.
+ 
+ * swap(other): Exchanges the contents of two vectors.
+Iterators
+
+ * begin(): Returns an iterator to the beginning of the vector.
+ 
+ * end(): Returns an iterator to the end of the vector.
+ 
+ * rbegin(): Returns a reverse iterator to the end of the vector.
+ 
+ * rend(): Returns a reverse iterator to the beginning of the vector.
+ 
+ * cbegin(), cend(), crbegin(), crend(): Constant versions of the iterators.
+ 
+% Other
+ * get_allocator(): Returns a copy of the allocator used by the vector.
+ 
+[Example]
+#include <iostream>
+#include <vector>
+
+int main() {
+    std::vector<int> numbers = {2, 5, 1, 9, 3};
+
+    // Access elements
+    std::cout << numbers[2] << std::endl; // Output: 1
+    std::cout << numbers.at(0) << std::endl; // Output: 2
+
+    // Modify elements
+    numbers.push_back(7);
+    numbers.insert(numbers.begin() + 2, 4);
+
+    // Remove elements
+    numbers.erase(numbers.begin() + 3);
+    numbers.pop_back();
+
+    // Iterate over elements
+    for (int num : numbers) {
+        std::cout << num << " ";
+    }
+    std::cout << std::endl;
+
+    return 0;
+}
+

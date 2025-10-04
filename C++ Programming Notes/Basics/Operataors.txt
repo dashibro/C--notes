@@ -1,0 +1,22 @@
+%Operator of c++ which are diff from python
+
+%Arthmatic operators:
+   1 divide(/)= in python when we use (/) operator it gives output in float but in c++ (/) operator gives the output in integer
+      Ex=1/2=0
+   (here (++) means increment of 1 and (--) means decrement of 1)
+   2 a++ and ++a=in c++ when we use (a++) operator it mean a+1
+      Ex=a=5;
+         a++=6
+   3 a-- and --a=it means decrement of a from 1
+         Ex=a=5;
+            a--=4
+..........................................................................................            
+Note= here (a++) mean first value than increment and (++a) means first inrement than value
+..........................................................................................
+
+%Comparasion operator
+   All same as python but in c++ it is compulsory to us of "()" paranthese to enclose operators
+      %Logical operator(and,or,not)
+      1 for and use (&&)
+      2 for or use (||)
+      3 for not use (!)

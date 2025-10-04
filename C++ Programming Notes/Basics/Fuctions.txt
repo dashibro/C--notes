@@ -1,0 +1,57 @@
+
+%Functions in C++:
+it is same a python 
+[syntax to define a funct]
+datatype func_name(parameters
+                  (optional)){
+      //body of the function;
+      return value;}
+      
+Note=It is importent for a fuction in c++ to return a value
+
+[syntax to call a function]
+fucnt_name(argument(if
+any));%same as python
+
+%Function prototype:
+[Defination]
+in C++ if you define a function above the call it will work properly but if you define a funct below the call it will through an error in order to reduce that error we use function prototype
+
+Reason=the compiler in c++ goes to up to down manner so it dont know that you have created a function like that
+
+[sytax]
+data_type funct_name(arguments(if any));
+
+Note=prototype always must be above the functio call
+
+%Call by value and Call by reference
+
+call by value=the normal method to call
+call by reference=when you make                    parameter as pointer variable and give address of variable as argument
+
+%Inline functions:
+[Defination]
+The inline keyword is used to suggest to the compiler that a function should be inlined, meaning the compiler can substitute the function body wherever the function is called
+
+[syntax]
+put inline keyword before defining the fuction
+
+Note=inline bunana compiler ke uper hota hai agar use lugega ki yaha bunana chihiye to vo inline function bunaega verna agar usse dikha ki faltu mai likha hai to vo nhi bunata(in short is like a request ki bhai mera function inline bunade)
+
+%Default argument:
+same as python
+[syntax]
+data_type func_name(data_type a=value,data_type b=value){}
+
+%Constant arguments:
+[Defination]
+when you define this type of arguments and once the value has given to the variable it can not change
+%Recurtion
+[Defination]
+when you call a function in it selt and it forms a loop that setuation is called recurtion
+Note=You can imagin recursive function as an alternative of loops
+%Function overloading
+Function overloading in C++  allows you to define multiple functions with the same name but different parameters
+Ex=sum(int a,int b)
+   sum(int a, int b,int c)
+   in the following case the        compiler first match the         parameter of the funct_define    and funct_call

@@ -1,0 +1,12 @@
+% Containers in STL
+1. Containers in STL use to store data.
+2. there are total 3 types of containers:
+
+* Sequance container: linear fashion.
+example= vector,list,deqeue.
+
+* Assosialtive cintainer:Direct Access
+Example=tree,set,map
+
+* Derived container:Real world modling
+Example=stack,queue,priority-queue

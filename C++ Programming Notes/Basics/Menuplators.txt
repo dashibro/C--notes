@@ -1,0 +1,4 @@
+$
+%Menuplators C++
+these are the keywords use to make our program clean and look good
+Ex= endl;

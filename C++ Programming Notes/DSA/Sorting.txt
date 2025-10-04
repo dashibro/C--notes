@@ -1,0 +1,15 @@
+$
+1.Selection sort:
+[Logic]
+1.Outer Loop: The outer loop iterates through the list n-1 times, where n is the number of elements. This is because with each iteration, the smallest element gets placed in its correct position.
+2.Unsorted Subarray: The algorithm maintains a concept of an unsorted subarray. Initially, the entire list is considered unsorted.
+3.Finding Minimum: In each iteration, the outer loop finds the index of the minimum element within the unsorted subarray. This involves comparing all elements in the unsorted subarray.
+4.Swapping: Once the minimum element's index is found, it's swapped with the first element of the unsorted subarray. This places the minimum element in its correct position.
+5.Shrinking Unsorted Subarray: In the next iteration, the outer loop focuses on the remaining unsorted subarray (excluding the element that was swapped in the previous step).
+2.Bubble sort:
+[Logic]
+1.Outer Loop: The algorithm iterates through the list multiple times. The number of iterations is typically equal to the number of elements in the list minus one (n-1), because with each pass, the largest element "bubbles" to its correct position at the end.
+2.Inner Loop: In each iteration, the outer loop drives an inner loop that compares adjacent elements.
+3.Comparison: The inner loop compares the current element with the element next to it.
+4.Swapping: If the current element is greater than the next element, they are swapped. This effectively "bubbles" the larger element one position further towards the end of the list.
+5.Repeat: The inner loop continues comparing and swapping adjacent elements until it reaches the end of the sub-list being processed in that iteration.

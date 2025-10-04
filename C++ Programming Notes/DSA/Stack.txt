@@ -1,0 +1,170 @@
+Introduction:
+    A stack is a linear data structure. Any operation on the stack is performed in LIFO (Last In First Out) order. This means the element to enter the container last would be the first one to leave the container. It is imperative that elements above an element in a stack must be removed first before fetching any element.
+    An element can be pushed in this basket-type container illustrated below. Any basket has a limit, and so does our container too. Elements in a stack can only be pushed to a limit. And this extra pushing of elements in a stack leads to stack overflow.
+
+Applications of Stack:
+	1. We have talked about function calls before as well. A function until it returns reserves a space in the memory stack. Any function embedded in some function comes above the parent function in the stack. So, first, the embedded function ends, and then the parent one. Here, the function called last ends first.  (LIFO).
+	2. Infix to postfix conversion (and other similar conversions) will be dealt with in the coming tutorials.
+	3. Parenthesis matching and many more...
+
+Importent turms:
+	    1. Underflow/Overflow: to determine whether the stack is empty or full to carry efficient push and pop operations.
+        2. Top: it is the topest element in the stack.
+
+Implementation:
+    A stack element can be implemented by both an array and a linked list. We’ll see both these methods in the coming tutorials.
+    A stack is a collection of elements with certain operations following the LIFO (Last in First Out) discipline. If you are dealing with stacks, you should not forget about this. So, we’ll consider everything about stacks from the basics. Just stay.
+
+# Code sneppit:
+    '''
+    class Stack
+    {
+      public:
+        int size;
+        int top;
+        int *arr;
+
+        Stack(int val)
+        {
+          size = val;
+          top = -1;
+          arr = new int[size];
+        }
+        ~Stack()
+        {
+          delete[] arr;
+        }
+    '''
+
+# Note = you can implement Stack using linked list too.First create a linked list normally and than while creating function in stack
+         create than according to linked list.For example:create push function like you create inserte in linked list.
+         '''
+         class Node
+         {
+            public:
+              int data;
+              Node* next;
+
+            Node(int val) : data(val),next(nullptr) {}
+         };
+
+         class Stack
+         {
+            public:
+              int top;
+              int size;
+              Node* head = nullptr;
+
+              Stack(int val) : size(val),top(-1) {}
+              void push(int val)
+              {
+                if(top == size-1)
+                {
+                  std::cout<<"Stack underflow"<<std::endl;
+                }
+
+                else
+                {
+                  Node* n = new Node(val);
+
+                  if(head == nullptr)
+                  {
+                    head = n;
+                    top++;
+                  }
+
+                  else
+                  {
+                    Node* temp = head;
+
+                    while(temp->next != nullptr)
+                    {
+                      temp = temp->next;
+                    }
+
+                    temp->next = n;
+                    top++;
+                  }
+                }
+              }
+         };
+         '''
+Operators of Stack:
+  1.Push = It is used to push element in the stack.
+  syntax:
+    '''
+    void push(int val)
+    {
+      if(top == size-1)
+      {
+        std::cout<<"Stack overflow"<<std::endl;
+      }
+
+      else
+      {
+        arr[++top] = val;
+      }
+    }
+    '''
+
+  2.Pop = It is use to delete elements form the stack.
+  syntax:
+    '''
+    void pop()
+    {
+     if(top == -1)
+     {
+        std::cout<<"Stack Underflow"<<std::endl;
+     }
+
+     else
+     {
+        top--;
+     }
+    }
+    '''
+
+    3.Peek = This function check if the stack is empty or not, if not than it return the top value in the stack.
+    syntax:
+      '''
+      void peek()
+     {
+        if(top == -1)
+        {
+            std::cout<<"Stack underflow"<<std::endl;
+        }
+
+        else
+        {
+            std::cout<<arr[top]<<std::endl;
+        }
+        
+     }
+      '''
+# Infix,Prefix and postfix
+  In data structures, infix, prefix, and postfix are notations used to represent arithmetic expressions. 
+  These notations are crucial for understanding how expressions are evaluated and manipulated, especially when 
+  using data structures like stacks.
+  
+  1.Infix = The operators which you use to see in daily life like = a+b,a-b and a*b. 
+            Are consider as Infix notation in this operators lies between the operants.
+
+  2.Prefix = It is the notation where operator lies in front of the operants.
+             Ex = +ab,-ab and *ab
+
+  3.Postfix = It is the notation in which the operator lies after the operants.
+              Ex = ab+,ab- and ab*
+
+NOTE:  
+________________________________________________________________________________________________________________________
+*Operators precedance:
+  1.Brackets((),[],{})
+  2.^
+  3.*,/
+  4.+,-
+
+*If two operator with same precedance lie in same expression than we will consider left to right operations.
+  example = if the expression is (5-4+2) than:
+            first evaluate 5-4 and than +2.
+__________________________________________________________________________________________________________________________
+

@@ -1,0 +1,187 @@
+https://docs.google.com/spreadsheets/d/1kyHfGGaLTzWspcqMUUS5Httmip7t8LJB0P-uPrRLGos/edit?usp=sharing
+
+Nishant Bhaiya's 151							
+							
+							
+	🟩How to make most of this sheet?: https://bit.ly/WhatsAlgoPrep151							
+							
+	Arrays						
+1	Rotate Array						
+2	Squares of a sorted array						
+3	Kadane's Algo						
+4	maximum product subarray						
+5	majority element						
+6	majority element 2						
+7	Next Greater Element III						
+8	Max chunks to make sorted						
+9	Max Chunks To Make Sorted II						
+10	number of subarrays with bounded maximum						
+11	First missing positive						
+12	Range Addition						
+13	Min No. of Platform						
+14	Trapping rain water						
+							
+	Two Pointers						
+15	Container With Most Water						
+16	Two Sum						
+17	Two Difference						
+							
+	Recursion and BackTracking						
+18	Permutations						
+19	Permutation Sequence						
+20	Combination Sum						
+21	Cmbination Sum 2						
+22	Letter combination of Phone number						
+23	N Queens						
+24	Rat in a Maze Path						
+							
+	Bit Manipulation						
+25	Single Element						
+26	Single Element 2						
+27	Single Number 3						
+28	Divide 2 Integers						
+29	 Max AND Pair.						
+							
+	HashMap						
+30	Check AP sequence						
+31	Grid illumination						
+32	Brick wall						
+33	Count of subarray with sum = k						
+34	Subarray sum divisible by K						
+35	Insert Delete GetRandom O(1)						
+36	Insert delete get random duplicates allowed						
+37	Longest consecutive sequence						
+38	Find all anagrams in a string						
+39	Find smallest size of string containing all char of other						
+40	Write hashmap						
+41	subarray with equal number of 0 and 1						
+42	Substring with equal 0 1 and 2						
+							
+	Heap						
+43	Kth Largest Element						
+44	Minimum number of refueling spots						
+45	minimum cost to connect sticks						
+46	Employee Free time						
+47	Find Median from Data Stream						
+							
+	Binary Search						
+48	capacity to ship within D days						
+49	Painter's partition problem						
+50	search in rotated sorted array						
+51	Search in rotated sorted array 2						
+52	Allocate books						
+53	median of two sorted array						
+							
+	LinkedList						
+54	reverse LinkedList						
+55	Find the middle element						
+56	Floyd cycle						
+57	Clone a linkedlist						
+58	Intersection point of 2 linked list						
+59	LRU Cache						
+							
+	Stacks and Queues						
+60	Next Greater Element						
+61	Largest Rectangular Area Histogram						
+62	maximu size binary matrix containing 1						
+63	Valid Parentheses						
+64	Min Stack						
+65	K stacks in a single array						
+66	Infix evaluation						
+67	K reverse in a queue						
+68	K queue						
+							
+							
+	TREES						
+69	Preorder Traversal						
+70	Inorder Traversal						
+71	Postorder Traversal						
+72	right side view						
+73	Left View						
+74	Top View						
+75	Bottom View						
+76	Vertical order						
+77	Diagonal Traversal						
+78	Boundary Traversal						
+79	Binary Tree Cameras						
+80	Max path sum						
+81	Delete node in bst						
+82	Construct from inorder and preorder						
+83	Next right pointer in each node						
+84	Convert a binary tree to circular doubly linked list						
+85	Conversion of sorted DLL to BST						
+86	Lowest common ancestor						
+87	serialize and deserialise						
+							
+							
+	Trie						
+88	Implement Trie						
+89	Max XOR of two numbers in an array						
+90	Maximum XOR with an element from Array						
+							
+	DP						
+91	longest increasing subsequence						
+92	longest increasing subsequence						
+93	building bridges						
+94	Russian doll envelopes						
+95	Box stacking						
+96	Paint house						
+97	No. of binary string without consecutive 1						
+98	Possible ways to construct the building						
+99	Total no. of bst						
+100	No. of balanced parentheses sequence						
+101	Min cost path						
+102	Cherry pickup						
+103	Cherry pickup 2						
+104	best time to buy and sell stock						
+105	best time to buy and sell 2						
+106	buy and sell with transaction fee						
+107	best time to buy and sell with cool down						
+108	best time to buy and sell 3						
+109	best time to but and sell 4						
+110	burst balloons						
+111	Optimal BST						
+112	Matrix chain multiplication						
+113	Longest common subsequence						
+114	Count all pallindromic subsequence						
+115	Count distinct pallindromic subsequence						
+116	No. of sequence of type a^i+b^j+c^k						
+117	2 egg 100 floor						
+118	egg drop						
+119	Regular Expression Matching						
+120	Palindrome partitioning						
+121	Frog jump						
+122	Edit Distance						
+123	0-1 Knapsack						
+124	unbounded knapsack						
+125	Fractional knapsack						
+126	Coin change combination						
+127	Coin change permutation						
+							
+							
+	GRAPHS						
+128	Number of Islands						
+129	Number of Distinct Islands						
+130	Rotting Oranges						
+131	Bipartite graph						
+132	Bus routes						
+133	Prim's Algo						
+134	Dijkstra algo						
+135	swim in rising water						
+136	0-1 matrix						
+137	bellman ford						
+138	Strongly Connected Components (Kosaraju's Algo)						
+139	Mother Vertex						
+140	Kahn's algo						
+141	Alien Dictionary						
+142	Number of Islands II						
+143	Regions Cut By Slashes						
+144	Sentence Similarity II						
+145	Redundant Connection						
+146	Redundant connection 2						
+147	Articulation point						
+148	Min swaps required to sort array						
+149	Sliding Puzzle						
+150	Floyd Warshall						
+151	remove max number of edges to keep graph traversal						
+							

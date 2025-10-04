@@ -1,0 +1,30 @@
+%Arreys in C++:
+* you can imagin array like list in python
+
+* the indexing of arrey is same as python list
+
+* the variable of arrey contains the address of arrey
+
+*you can print and arrey:
+
+1.one by one single element
+  Ex=cout<<a[0];
+  output=the first element of the arrey
+
+2.you can triverse the arrey
+[point to remember]
+* in a[] if you give an index/address which is greater or smaller than the arrey size or we can say it did not exist in the arrey than:
+  1.may the program can crash
+  2.the compiler can give            unexpacted output or any         garbage value
+  
+[Reason]
+C++ don't perform built-in bounds checking for arrys.this means it doesn't explicitly check wheather you are accessiong the element whithin the valid range.
+
+[solution of this is]
+you have to type a code to check the if the element in arrey is in the range or not.
+
+[syntax]
+int a[size]={v1,v2,v3,...}
+
+Note= 1.you can keep the size bracket blank than you can enter as much value as you want
+Ex=int a[]={v1,v2,.....}

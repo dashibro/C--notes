@@ -1,0 +1,47 @@
+# Constructors:
+  A constructor is a special member function that is automatically called when an object of a class is created. 
+  Its main purpose is to initialize the object's data members and allocate resources if necessary. 
+  Constructors have the same name as the class and do not have a return type, not even void.
+
+# Key Points:Initialization: 
+  Constructors are used to set initial values for the data members of the class.
+  Overloading: You can have multiple constructors in a class with different parameters (constructor overloading ).
+  Default Constructor: A constructor that takes no arguments. If no constructor is defined, the compiler provides a default constructor.
+  Parameterized Constructor: A constructor that takes arguments to initialize the object with specific values.
+  '''
+  class MyClass {
+    public:
+      int x;
+    
+    // Default constructor
+    MyClass() {
+     x = 0;
+    }
+
+    // Parameterized constructor
+    MyClass(int val) {
+      x = val;
+    }
+};
+  '''
+
+# Distructor:
+  A destructor is a special member function that is automatically called when an object goes out of scope or is explicitly deleted. 
+  Its main purpose is to release resources that the object may have acquired during its lifetime, such as memory, file handles, etc.
+  Destructors have the same name as the class but are preceded by a tilde (~) and do not take any arguments or return a value.
+  '''
+  class MyClass {
+    public:
+      int* ptr;
+
+    // Constructor
+    MyClass(int size) {
+      ptr = new int[size]; // Allocate memory
+    }
+
+    // Destructor
+    ~MyClass() {
+       delete[] ptr; // Free allocated memory
+    }
+};
+  '''

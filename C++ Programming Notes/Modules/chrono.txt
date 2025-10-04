@@ -1,0 +1,35 @@
+% chrono library
+chrono library in c++ is a set of function and classes which can be use to measure time accuratly
+
+[Note]
+you can use chrono library to measure the runtime of a program or function
+
+% build-in functions and classes
+1.chrono::high_resolution_clock: Provides the most precise clock available on the system.
+
+2.chrono::steady_clock: Offers a monotonic clock that is not affected by system time adjustments.
+
+3.chrono::system_clock: Represents the system clock, which can be adjusted.
+
+4.chrono::duration: Represents a time interval. It can be used with various time units like 1.`chrono::seconds`, 2.`chrono::milliseconds`, 3.`chrono::microseconds`, and 4.`chrono::nanoseconds`.
+
+5.chrono::time_point: Represents a specific point in time.
+
+% Example:
+
+$
+#include <iostream>
+#include <chrono>
+using namespace std;
+int main() {
+    // Start the timer
+    auto start = chrono::high_resolution_clock::now();
+    // Your code to measure
+    // ...
+    // End the timer
+    auto end = chrono::high_resolution_clock::now();
+    // Calculate elapsed time in milliseconds
+    auto elapsed_ms = chrono::duration_cast<chrono::milliseconds>(end - start);
+    cout << "Elapsed time: " << elapsed_ms.count() << " milliseconds" << endl;
+    return 0;
+}

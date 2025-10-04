@@ -1,0 +1,22 @@
+$
+% Data types in c++
+1 INT=integers
+
+2 CHAR=characters
+  Note=in c++ we define character in ''(singal cords)
+  Ex='a' and 'A'
+
+3 FLOAT=decimal number
+
+4 DOUBLE=bude decimal numbers
+
+5 POINTER variabl=in this variable you can only save addresses of other variable
+[syntax]
+int* a=& variables_name;
+
+6 STATIC variable=we can understan this with an example
+Ex=tumne ek function ke under (x) ki value 3 kardi to agli baar jub function call hoga to (x) ki value 3 hi rahe gi 
+Reason=static variable main define vali line bus ek hi baar run hoti hai or variable ki value kubhi change nhi hoti bhule hi vo function mai hi kyuna ho
+note=mostly used in fuction
+
+7.auto = it automatically defines the datatype of the variable

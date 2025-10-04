@@ -1,0 +1,9 @@
+$
+% Header files in c++
+Note= we write header files as:
+       #incude<header_file>
+There are two types of header file:
+1 System hreader files(it comes with compiler)
+      Ex=iostream
+2 User define files(it is written by the programer)
+  Note= we creat header file in c++ just like we creat modules in python

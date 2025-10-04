@@ -1,0 +1,119 @@
+# Queue Data Structure in DSA
+    * A queue is a linear data structure that follows the First In, First Out (FIFO) principle. This means that the
+      element added first to the queue will be the first one to be removed.
+
+# Types of Queue:
+    1.Simple Queue:
+        The basic queue that follow the FIFO principle.
+    2.Circlar Queue:
+        The last postion is connected to the first that makes a Circlar list
+    3.Pirority Queue:
+        Each element is assingned a Pirority.elements with high Pirority are dequeued before elements with least Pirority
+    4.Double-Ended Queue (Deque):
+        elements can be added and removed by both sides rear and front
+
+# Operations in Queue:
+    In STL queue library there are a lot of futions:
+
+    1.push(enqueue) = to intsert the element
+    2.pop(dequeue) = to remove the element from the head of the queue
+    3.front(peek) = to see the first element of the queue
+    4.back() =  to see the last element of the queue
+    5.empty() = it returns true if the queue is empty
+    6.size() = returns the number of elements in queue
+    7.swap() = we use to swap elements of two queues
+
+# deque in STL:
+    The STL deque (double-ended queue) in C++ is a sequence container that allows fast insertion and deletion at both the front and back. Unlike std::vector, 
+    elements in a deque are not stored contiguously but in separate memory blocks, making expansion more efficient.
+
+    Key Features
+        - Fast insertions/removals at both ends (O(1) complexity).
+        - Random access to elements (O(1) complexity).
+        - Dynamic resizing without excessive memory reallocation.
+        - Supports iterators for traversal.
+
+    Common Functions
+        - push_front(value): Inserts an element at the front.
+        - push_back(value): Inserts an element at the back.
+        - pop_front(): Removes the front element.
+        - pop_back(): Removes the back element.
+        - front(): Returns the first element.
+        - back(): Returns the last element.
+        - size(): Returns the number of elements.
+        - empty(): Checks if the deque is empty.
+        - insert(position, value): Inserts an element at a specific position.
+        - erase(position): Removes an element at a specific position.
+
+# Circular Queue:
+  A Circular Queue is a way of implementing a normal queue where the last element of the queue is connected to the first element of the 
+  queue forming a circle.
+
+  # Operations in Circular Queue:
+    1.enqueue(val) = To add a value in the queue
+    2.dequeue() = To remove element from the queue
+    3.getfront() = To return the front element of the queue
+    4.getrare() = To return the back element of the queue
+
+# Implemention of a circular queue:
+''' class Queue
+{
+    public:
+    int front;
+    int rear;
+    int cursize;
+    int size;
+    int* arr;
+
+    Queue(int val) : front(0),cursize(0),rear(-1),size(val),arr(new int[size]) {}
+
+    void push(int val)
+    {
+        if(cursize == size)
+        {
+            printf("Queue Overflow");
+            return;
+        }
+        rear = (rear+1)%size;
+        arr[rear] = val;
+        cursize++;
+    }
+
+    void pop()
+    {
+        if(cursize == 0)
+        {
+            printf("Queue Underflow");
+            return;
+        }
+
+        front = (front+1)%size;
+        cursize--;
+    }
+
+    int getfront()
+    {
+        if(cursize == 0)
+        {
+            printf("Queue Underflow");
+            return -1;
+        }
+        else
+        {
+            return arr[front];
+        } 
+    }
+
+    int getback()
+    {
+        if(cursize == 0)
+        {
+            printf("Queue Underflow");
+            return -1;
+        }
+        else
+        {
+            return arr[rear];
+        } 
+    }
+};'''

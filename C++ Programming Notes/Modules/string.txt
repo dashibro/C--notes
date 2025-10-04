@@ -1,0 +1,16 @@
+$
+link=https://unstop.com/blog/strings-in-cpp
+% string functions
+1.size()=This function is used to find the size of the string in terms of bytes
+2.swap()=use to swap value of two strings
+3.length()=use to take length of the string
+4.push_back()=use to push a character at the end of the string
+5.resize()=use to resize the string up to the given number of characters
+6.find()=use to find the string passed in this fuction
+7.pop_back()= use to pop the last element of the string
+8.erase()=use to erase a perticular part of a string
+9.compare()=use to compare two strings
+10.strncmp()=This function only compares the first num bytes of each string it receives
+11.strcat()=A copy of the source string is appended to the end of the destination string by this function
+12.char(index) & at(index)=to access a individual character in a string
+13.insert(index,character)=use to modify a string at a given index

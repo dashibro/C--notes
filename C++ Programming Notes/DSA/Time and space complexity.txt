@@ -1,0 +1,10 @@
+%Time complexity
+The time taken by the program to run
+
+%Types of time complexity
+1.linear time complexity= here time complexity is directly proportional to the input(n).
+
+2.
+
+%Space complexity
+The space occupied by the program

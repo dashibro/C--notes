@@ -1,0 +1,52 @@
+%Exception handling in OOPs
+1.Exception(Error)=An exception is                   an unexpected problem that arises during the execution of a code and our prgram terminates suddenlly with an error/issue.
+% Keywords
+1.try=It repersents a block of code that may through a exception placed inside the try block.
+
+[syntax]
+try
+{
+ //code
+}
+
+2.catch=It repersents a block of code that is executed when a particular exception is thrown from the try block.
+
+[syntax]
+try{}catch(const char prointer_variable)
+{
+ cout<<your message;
+}
+
+[Note]
+1.there could be one or more than one catch block after a try.
+2. you can call make the defoult catch block like this 
+"catch(...){//code}"
+
+3.thow=Any exception in c++ can be thrown using the "throw" keyword.
+
+[syntax]
+throw "message";
+
+[Note]
+After throwing an exception the program will be terminated immediately.
+
+%errors that std:exception contain
+
+1.std:exception
+  *std:bad_alloc
+  *std:bad_cast
+  *std:bad_typeid
+  *std:bad_exeption
+  *std:logic_failure
+  *std:runtime_error
+
+2.std:logic_failure
+  *std:domain_error
+  *std:invalid_argument
+  *std:length_error
+  *std:out_of_range
+
+3.std:runtime_error
+  *std:overflow_error
+  *std:range_error
+  *std:underflow_error

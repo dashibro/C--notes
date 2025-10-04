@@ -1,0 +1,27 @@
+"new" Operater in c++:
+    The new operator is used to allocate memory on the heap for a single object or an array of objects.
+    It returns a pointer to the beginning of the allocated memory block. There are two main forms of the new operator:
+
+        1.Standard new: This form throws a std::bad_alloc exception if the memory allocation fails.
+          '''
+          int* ptr = new int; // Allocates memory for a single integer
+          '''
+        2.nothrow new: This form returns nullptr if the memory allocation fails, instead of throwing an exception.
+          This is useful when you want to handle allocation failures manually.
+          '''
+          1. int* ptr = new(std::nothrow) int; // Allocates memory for a single integer without throwing an exception
+          2. int* arr = new int[10]; // Allocates memory for an array of 10 integers
+          '''
+"delete" operator in c++:
+    The delete operator is used to deallocate memory that was previously allocated with new.
+    It frees up the memory so that it can be reused by other parts of the program.
+
+    There are two forms of the delete operator:
+      1.Standard delete: Used to deallocate memory for a single object.
+        '''
+        delete ptr; // Deallocates memory for a single integer
+        '''
+      2.Array delete[]: Used to deallocate memory for an array of objects.
+        '''
+        delete[] arr; // Deallocates memory for an array of integers
+        '''

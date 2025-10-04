@@ -1,0 +1,63 @@
+% Function Objects (Functors) in C++
+A functor, or function object, is a C++ class that overloads the operator(). This allows an instance of the class to be called like a function. While regular functions are essentially pointers to code, functors are objects with their own state and behavior.
+
+% Why Use Functors?
+ * Statefulness: Functors can hold internal state, making them more flexible than regular functions.
+ 
+ * Polymorphism: You can create polymorphic functors through inheritance.
+ 
+ * Customization: Functors can be tailored to specific tasks.
+ 
+ * STL Compatibility: Many STL algorithms rely on functors for customization.
+ 
+% Basic Structure of a Functor:
+$
+class MyFunctor
+{
+public:
+    void operator()(int x) {
+        // Function body
+    }
+};
+[Example]
+#include <iostream>
+class Increment {
+public:
+    Increment(int value) : val(value) {}
+    int operator()(int x) {
+        return x + val;
+    }
+private:
+    int val;
+};
+int main() {
+    Increment inc(5);
+    int result = inc(10); // Equivalent to inc.operator()(10)
+    std::cout << result << std::endl; // Output: 15
+    return 0;
+}
+
+%Functors and the STL:
+The Standard Template Library (STL) extensively uses functors. For example:
+
+ * std::sort: Takes a comparator functor to define the sorting order.
+ 
+ * std::find_if: Takes a predicate functor to find elements matching a condition.
+ 
+ * std::transform: Takes a unary or binary functor to apply a transformation to elements.
+Advantages of Functors Over 
+
+%Function Pointers:
+ * Functors can hold state.
+ * Functors can be polymorphic.
+ * Functors can be used with templates more easily.
+ 
+%Key Points to Remember:
+ * Functors are objects, not functions.
+ 
+ * Overloading operator() is essential.
+ 
+ * Functors can be used with STL algorithms for customization.
+ 
+ * Consider using lambdas as a more concise alternative in modern C++.
+ 

@@ -1,0 +1,69 @@
+% Maps in STL
+Maps are associative containers in C++ STL that store elements in a mapped fashion. Each element consists of a key value and a mapped value. No two mapped values can have the same key value.
+
+%Key Features
+ * Key-value pairs: Stores data as pairs of keys and associated values.
+ 
+ * Unique keys: Each key must be unique within the map.
+ 
+ * Ordered by key: Elements are sorted based on their keys.
+ 
+ * Efficient search, insertion, and deletion: Operations on maps are generally efficient, with logarithmic time complexity for most operations.
+ 
+%Declaration and Initialization
+$ #include <map>
+std::map<key_type, value_type> map_name;
+
+ * key_type: The data type of the keys.
+ 
+ * value_type: The data type of the values.
+ 
+ * map_name: The name of the map.
+[Example]
+$
+#include <iostream>
+#include <map>
+using namespace std;
+int main() {
+    map<string, int> ages = {
+        {"Alice", 30},
+        {"Bob", 25},
+        {"Charlie", 35}
+    };
+// Accessing values
+    cout << ages["Alice"] << endl; // Output: 30
+return 0;
+}
+
+%Common Operations
+ * Insertion:
+ map.insert(pair<key_type, value_type>(key, value)) or map[key] = value
+ 
+ * Access: map[key] (returns a reference to the value)
+ 
+ * Deletion: map.erase(key)
+ 
+ * Finding: map.find(key) (returns an iterator to the element or map.end() if not found)
+ 
+ * Size: map.size()
+ 
+ * Empty: map.empty()
+ 
+ * Clear: map.clear()
+ 
+[Example]
+$
+#include <iostream>
+#include <map>
+using namespace std;
+int main() {
+    map<string, int> student_marks;
+student_marks["Alice"] = 95;
+    student_marks["Bob"] = 88;
+    student_marks["Charlie"] = 92;
+// Iterating over the map
+    for (auto it = student_marks.begin(); it != student_marks.end(); ++it) {
+        cout << it->first << ": " << it->second << endl;
+    }
+return 0;
+}

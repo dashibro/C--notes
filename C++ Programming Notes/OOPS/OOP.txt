@@ -1,0 +1,13 @@
+$
+%OOP(Object oriented programming)
+* Works on the concept of classes and objects
+* A class is a templete to creat objects
+* Decompose the problem in object and build data and functions around the objects
+% Some basic concept of object oriented programming
+1) Classes= Basic templete for creating objects
+2) Object= Basic run time entites
+3) Data abstraction & Encpsulation= Wrapping data and function into single unit
+4) Inheritance= Properties of one class can be inharited into others
+5) Polymorphism= Ability to take more than one forms
+6) Dynamic binding= code which will execute is not known until the program runs
+7) Message passing= passing data through diff objects

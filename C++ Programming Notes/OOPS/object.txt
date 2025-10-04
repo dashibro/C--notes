@@ -1,0 +1,4 @@
+$
+% objects in c++
+In C++ Object-Oriented Programming (OOP), an object is an instance of a class, which represents a real-world entity or concept. An object has its own set of attributes (data) and methods (functions) that describe and define its behavior.
+% memory allocation of objects

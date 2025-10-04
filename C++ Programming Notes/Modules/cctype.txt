@@ -1,0 +1,48 @@
+% cctype library in c++
+the cctype library in c++ use to perform operation on a character
+
+% buildin function
+1.isalpha(ch): Returns `true` if `ch` is an alphabetic character (A-Z or a-z).
+
+2.isdigit(ch): Returns `true` if `ch` is a digit (0-9).
+
+3.isalnum(ch): Returns `true` if `ch` is an alphanumeric character (alphabetic or digit).
+
+4.isspace(ch): Returns `true` if `ch` is a whitespace character (space, tab, newline, etc.).
+
+5.isupper(ch): Returns `true` if `ch` is an uppercase letter.
+6.islower(ch): Returns `true` if `ch` is a lowercase letter.
+
+7.ispunct(ch): Returns `true` if `ch` is a punctuation character.
+
+8.iscntrl(ch): Returns `true` if `ch` is a control character.
+9.isgraph(ch): Returns `true` if `ch` is a printing character (excluding space).
+10.isprint(ch): Returns `true` if `ch` is a printing character (including space).
+
+%Character Conversion Functions:
+
+1.toupper(ch): Converts `ch` to its uppercase equivalent if it's a lowercase letter.
+2.tolower(ch): Converts `ch` to its lowercase equivalent if it's an uppercase letter.
+
+%Example:
+$
+#include <iostream>
+#include <cctype>
+using namespace std;
+int main() {
+    char ch = 'A';
+    if (isalpha(ch)) {
+        cout << "The character is alphabetic." << endl;
+    }
+    if (isupper(ch)) {
+        cout << "The character is uppercase." << endl;
+    }
+    ch = toupper('a');
+    cout << "Uppercase equivalent: " << ch << endl;
+    return 0;
+}
+**Output:**
+The character is alphabetic.
+The character is uppercase.
+Uppercase equivalent: A
+

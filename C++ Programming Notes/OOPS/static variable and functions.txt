@@ -1,0 +1,7 @@
+$
+% Static variables
+a static variable can be used for multiple objects at a time 
+Ex= suppose main ek variable bunata count hu jismai maine bohot sare objects ki number of entries store ki hai too bo static variable her object ke liye individually kaam karega
+Note= static variables by default 0 hote hai.(agar int hai too)
+% Satic function
+static function bus static variables per hi chulte hai.

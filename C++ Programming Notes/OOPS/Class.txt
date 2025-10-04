@@ -1,0 +1,14 @@
+$
+%class in c++:
+* They are same as structure but the data of a structure can be use freely by any one the in classes it depends on you if you want to make it public or private
+* It is compalsary to use (;) semicolon with class in c++
+%Access specifier
+*private=using private class you can only access the within the class and not out of the class
+[Note]
+when we use private variable in a public function in a class it won't give error
+Ex=private:
+     int a,b,c;
+(these variables can only be used with in a class)
+*public= by making a public class you can access that anywhere in whole program
+*protected=
+% Memory allocation to a class

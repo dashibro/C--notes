@@ -1,0 +1,47 @@
+% Templates in c++
+Templates are a powerful feature in C++ that enable you to write generic functions and classes. This means you can create a single function or class that can work with different data types without having to rewrite the code for each type.
+
+% Why to use templates
+* Do not repeat yourselft(DRY principal)
+* Generic programming
+
+% Syntax for template
+template<class T>
+class class_name
+{
+t*arr;
+//body
+//and many other methods are there
+};
+
+[Note]
+1 here "T" can be any datatype like=int,float, char,double.
+
+2 when ever you are using any variable or function which is related to template or which gonna work with template you can use give "T" as a data type there
+
+Example=* T function_name(){}
+        * T variable_name=value;
+
+% obects of class that used in tamplate
+class_name <data_type>obj_name;
+
+Note= you have to enter the datatype which you gonna use with that objecte.
+
+% Multiple parameters in templates
+You can give more than one datatype in a single obj in templates
+[Syntax]
+templates<class T1,class T2>
+
+% Default parameter in templates
+[Syntax]
+template<class t1=datatype>
+
+% Use of template in fuctions
+To use a template in a function you just have to create a normal template and just use it in function like you use to do in class
+[Example]
+
+template<class t>
+t function_name(t parameters)
+{
+//body
+}

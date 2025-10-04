@@ -1,0 +1,11 @@
+$
+%Friend function in c++
+In C++, a friend function is a function that is granted special access to the private and protected members of a class. Even though it's not a member function itself, it can access the class's internal data as if it were.
+Here are some key points about friend functions:
+ * Declaration: A friend function is declared inside the class definition using the friend keyword followed by the function's prototype.
+ * Scope: Friend functions are not part of the class's scope and cannot be called using the dot (.) or arrow (->) operators.
+ * Use cases: Friend functions are typically used for overloading operators for user-defined data types or when two classes need to collaborate closely and access each other's private data.
+[Note]
+*You can declear functions as friend function individually
+*You can declear a function of a class as a friend function of an another class
+* or you can declear a whole class as a friend

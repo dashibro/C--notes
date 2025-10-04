@@ -1,0 +1,52 @@
+$
+%Polymorphism in OOPs:
+    Polymorphism in Object-Oriented Programming (OOP) refers to the ability of objects to exhibit different behaviors in response to the same message. This allows for flexible and reusable code.
+    for example=1.constructor overloading
+                2.function overload
+
+%define
+    **Function overloading= when multiple function contain same names but they have different nunber of arguments or different datatype of arguments that what you called function overloading
+    **contsructor overloading= similar to function overloading
+    **operator overloading=when a single operator perform multiple task 
+..........................................................................
+[Note]
+    You can use a operator as a function name too like
+    %defining
+    Ex= int operator +(int a)
+    {
+    //code;
+    }
+
+    %calling
+    cout<<b+a;
+
+    //here a is the argument of +;
+    //you can only use it in a class
+..............................................................................
+**function overriding = In C++, function overriding allows you to redefine an inherited function in a derived class to provide a specific implementation for that class. This is essential for runtime polymorphism.
+
+**virtual function = Virtual functions in C++ are member functions declared with the virtual keyword in a base class. They can be overridden in derived classes to provide different implementations. This enables runtime polymorphism, where the specific function to be called is determined at runtime based on the object's actual type.
+
+    1.Virtual functions are dynamic in nature.
+    2.Defined by the keyword "virtual" inside a base class and are always declared with a base class and overridden in a derived class
+    3.A virtual function is called during runtime.
+
+[pure virtual function]
+    In object-oriented programming (OOP), a pure virtual function is a member function of a base class that acts as a placeholder and must be overridden in derived classes. It has no definition within the base class itself, but derived classes are forced to implement it. This enforces a certain behavior or functionality that all derived classes must adhere to.
+    Here's a concise explanation:
+        * Declared in base class: A pure virtual function is prototyped within the base class.
+        * No implementation: The base class doesn't provide a body for the function.
+        * Enforces behavior in derived classes: Derived classes inheriting from the base class must implement the pure virtual function with their specific logic.
+        * Creates abstract classes: A base class containing one or more pure virtual functions becomes an abstract class, meaning you cannot create objects of that class directly.
+        
+%Types of polymorphism
+    There are two main types of polymorphism:
+        1.compile-time polymorphism(static)
+        [Example]
+        a.contructor overloading
+        b.function overloading
+        2.runtime polymorphism(dynamic)
+        a.function overriding
+        b.virtual functions
+        %define
+

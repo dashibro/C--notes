@@ -1,0 +1,62 @@
+%Control structure
+it help in making the logic of the program
+
+*there are three types of control structure
+
+1.Sequence structure(normal flow)
+2.Selection structure(if-else)
+3.loop structure(for loop)
+
+1.Sequence structure:
+the normal flow of execution
+
+2.Selection structure:
+[a]if-else if-else:
+   [syntax]
+   if(condition){
+     body;}
+   else if(condition){
+       body;}
+       
+[b]swich case:
+   [syntax]
+   switch variable{
+   case value:
+        body;
+        break;
+        break;
+   case value2:
+        body;
+        break;
+   default:
+        body;
+        break;
+   }
+   
+3.Loop structure:
+[a]for loop:
+   [syntax]
+   for(int variable=value;
+   condition;update){
+     body;
+   }
+  ...................................................
+  Note = you can use for loop for two or more than two variables as well.Just seperate them with comma.
+  '''
+  for(int i = 0,int j = 0;i == 10 && j == 20;i++ ,j++)
+  {
+    //code
+  }
+  '''
+  ...................................................
+[b]while loop:
+  [syntax]
+  while(condition){
+     body;
+  }
+  
+[c]do-while loop:
+  [syntax]
+  do{
+  body;
+  }while(condition)

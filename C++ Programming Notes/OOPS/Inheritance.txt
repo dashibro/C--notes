@@ -1,0 +1,28 @@
+$
+%Inheritance 
+when properties & member function of base class are passed on to the derived class.
+[Explaination]
+if you made a variable in base class you can use it in derived class too.
+[Syntax]
+class derivedclass_name:access
+specifier baseclass_name{};
+[Note]
+Inherient class ke declearation ke time per jub hum access specitier lugate hai to use pichle class se kuch lena dena nhi hota uska mutlub hota hai ki base class ki chize derived class ke liye kese kaam karne vali hai.
+example= suppose ek variable hai jo ki base class mai public hai to agar derived class ko bunate hue tumne vaha protected/private likha to vo derived class mai as protected/private hoga
+[base],[derived]=result
+*public,public=public
+*public,protected=portected
+*public,private=private
+*protected,private=private
+*protected,protected=protected
+*private,private=protected
+  [privte>protected>public]
+%type of Inheritance
+1.Single Inheritance= there are one base class and one derived class
+2.multi-level Inheritance= there are multiple base classes but one derived class only
+[Explantion]
+suppose you make three class.the second class is inherited with first and the third is inherited with second so the third class contain the inheritance of both first and second class.
+3.multiple Inheritance= there multiple base class but only one derived class but unlike mutiple-level inheritance here all the base classes simply linked with the dirived class
+Ex= person and student are individual classes but they both inherited with a third class lets suppose teacher.
+4.Hierarchial Inheritance=There are multiple derived classes but one perent class
+5.Hybrid inheritance=it is the mixture of all type of inheritace it means when multiple type of inheritance are performing in a same code than it is Hybrid inheritance.

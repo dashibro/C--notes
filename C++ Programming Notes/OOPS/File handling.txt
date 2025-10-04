@@ -1,0 +1,31 @@
+%File handling in c++
+* In c++ of handle a file we use "fstraeam" header file
+* To read the file you have to make an objct by "ifstream" class
+[syntax]
+ifstream obj_name;
+* To write a file you have to create an obj from "ofstream" class
+
+% Opening a file
+you can open a file in 2 ways:
+1.obj_name.open("file_name.ext");
+2.constructor:
+obj_name("file_name.ext");
+%Example code for reading a file
+  ifstream file;
+  file.open("temp.txt");
+  char a;
+  file>>a;
+  while(!file.eof())
+    {
+      file>>a;
+      cout<<a;
+    }
+  file.close();
+%Example code for writing in a file
+  ofstream file;
+  file.open("temp.txt");
+  file<<"hello world";
+  file.close();
+%inbluid functions in fstream
+1.file.get()=with get() we can                read words.
+2.getline(file,variable)=to read                          lines.

@@ -1,0 +1,17 @@
+$
+%Climits header file
+In C++, the `<climits>` header file provides information about the limits of various integer types, such as the maximum and minimum values that can be represented by each type.
+%The `<climits>` header file defines the following macros:
+- `CHAR_BIT`: The number of bits in a char (usually 8)
+- `CHAR_MAX`: The maximum value that can be represented by a char
+- `CHAR_MIN`: The minimum value that can be represented by a char
+- `INT_MAX`: The maximum value that can be represented by an int
+- `INT_MIN`: The minimum value that can be represented by an int
+- `LONG_MAX`: The maximum value       that can be represented by a long int
+- `LONG_MIN`: The minimum value that can be represented by a long int
+- `LLONG_MAX`: The maximum value that can be represented by a long long int
+- `LLONG_MIN`: The minimum value that can be represented by a long long int
+- `UINT_MAX`: The maximum value that can be represented by an unsigned int
+- `ULONG_MAX`: The maximum value that can be represented by an unsigned long int
+- `ULLONG_MAX`: The maximum value that can be represented by an unsigned long long int
+(These macros can be useful when working with integer types in C++ and wanting to ensure that values are within the valid range for a particular type.)

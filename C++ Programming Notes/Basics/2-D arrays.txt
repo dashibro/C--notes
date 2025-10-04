@@ -1,0 +1,42 @@
+% 2D array in c++
+2D array in c++ you can imangine it like a matrix which cantain row and columns
+
+%making a 2D array
+$int a[2][3]={{2,4,5},{3,5,2}};
+
+%taking input of an array
+$ int n,m;
+cout<<"Enter the number of rows here:";cin>>n;
+cout<<"Enter the number of col here:";cin>>m;
+
+$ int arr[n][m];
+
+$ for(int i=0;i<n;i++)
+{
+   for(int j=0;j<m;j++)
+     {
+       cin>>arr[i][j];
+     }
+}
+
+% Displaying an 2D array
+$ for(int i=0;i<raw;i++)
+  {
+    for(int j=0;j<col;j++)
+    {
+      cout<<a[i][j]<<" ";
+    }
+    cout<<endl;
+  }
+
+%Searching in 2d array
+$ for(int i=0;i<n;i++)
+  {
+    for(int j=0;j<m;j++)
+    {
+      if(arr[i][j]==sr)
+      {
+        cout<<"Element found"<<endl;
+      }
+    }
+  }

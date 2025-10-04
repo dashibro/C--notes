@@ -1,0 +1,74 @@
+% Virtual base class in c++ 
+Now suppose tumne teen class bunai hai "A" joki base hai aur "B" and "C" joki derived hai. ab tumne ek 4th class bunai "D" aur vo child class hai "B" and "C" ki ab yaha pe "BC" pehele se hi "A" ke child hai too yaha "D" to confuse ho jaega na ki yaar dodo "A" kese menege karu main to essi setuation mai vertual base class kaam ati hai. Hum yaha "A" ko virtual base class bunaenge taki "D" ke under bus ek hi "A" jae.
+
+% Example
+class Student
+{
+protected:
+int roll_no;
+
+public:
+void set_number(int a)
+{
+    roll_no=a;
+}
+
+void print_number()
+{
+    cout<<"Your roll no is "<<roll_no<<endl;
+}
+
+};
+
+class Test : virtual public Student
+{
+protected:
+int math,phy;
+
+public:
+void set_marks(int m1,int m2)
+{
+    math = m1;
+    phy = m2;
+}
+
+void print_marks()
+{
+    cout<<"You result is here:"<<endl
+        <<"Maths:"<<math<<endl
+        <<"Physics:"<<phy<<endl;
+}
+};
+
+class Sport : virtual public Student
+{
+protected:
+int score;
+public:
+
+void set_score(int sc)
+{
+    score = sc;
+}
+
+void print_score()
+{
+    cout<<"Your PT score is:"<<score<<endl;
+}
+};
+
+class Result : public Test,public Sport
+{
+private:
+int total;
+
+public:
+void display()
+{
+    total = math+phy+score;
+    print_number();
+    print_marks();
+    print_score();
+    cout<<"Your total score is:"<<total<<endl;
+}
+};

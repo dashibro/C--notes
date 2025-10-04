@@ -1,0 +1,74 @@
+% List in STL
+In C++, a list is a sequence container that stores elements in a linear fashion but without requiring contiguous memory allocation. It's implemented as a doubly linked list, offering efficient insertion and deletion operations at any position within the list.
+
+%Key Characteristics
+ * Non-contiguous memory allocation: Elements are stored in different memory locations.
+ 
+ * Doubly linked list: Each element points to both the previous and next elements.
+ 
+ * Efficient insertion and deletion: These operations are performed in constant time, regardless of the list's size.
+ 
+ * Slower traversal: Accessing elements by index is less efficient compared to other containers like vectors.
+
+* If you created a list with some number of elements but did not assign any value to them than by default they are 0.
+
+%Declaration and Initialization
+To use lists, you need to include the <list> header file:
+#include <list>
+
+You can declare a list as follows:
+$ std::list<data_type> list_name;
+
+Where data_type is the type of elements the list will hold.
+Initialization:
+$ std::list<int> numbers = {1, 2, 3, 4, 5};
+
+% Common Operations
+ * Adding elements:
+   * push_front(value): Adds an element to the beginning.
+   
+   * push_back(value): Adds an element to the end.
+   
+   * insert(iterator, value): Inserts an element at a specific position.
+   
+ * Removing elements:
+   * pop_front(): Removes the first element.
+   
+   * pop_back(): Removes the last element.
+   
+   * erase(iterator): Removes the element at the specified iterator.
+   
+   * remove(value): Removes all elements with the specified value.
+   
+ * Accessing elements:
+   * front(): Returns a reference to the first element.
+   
+   * back(): Returns a reference to the last element.
+   
+   * Iterators are commonly used to traverse the list.
+   
+* Other operations:
+   * size(): Returns the number of elements.
+   
+   * empty(): Checks if the list is empty.
+   
+   * clear(): Removes all elements.
+   
+Example
+$
+#include <iostream>
+#include <list>
+int main() {
+    std::list<int> numbers = {2, 5, 1, 4, 3};
+// Add elements
+    numbers.push_front(0);
+    numbers.push_back(6);
+// Remove elements
+    numbers.remove(2);
+// Traverse and print
+    for (int num : numbers) {
+        std::cout << num << " ";
+    }
+    std::cout << std::endl;
+return 0;
+}

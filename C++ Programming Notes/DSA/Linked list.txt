@@ -1,0 +1,147 @@
+%linked link in DSA
+Linked lists are a type of linear data structure where elements are not stored in contiguous memory locations. Instead, each element, or node, contains a data part and a pointer (or reference) to the next node in the sequence. This structure allows for dynamic memory allocation and efficient insertion and deletion operations.
+
+%Key Components of a Linked List:
+Node:A basic unit of a linked list, consisting of two parts:
+  - Data: Stores the actual value of the element.
+  - Next pointer: Points to the next node in the sequence.
+Head:The first node in the linked list.
+Tail:The last node in the linked list.
+
+%Types of Linked Lists:
+1. Singly Linked List:
+   * Each node points to the next node in the sequence.
+   * Traversal is only possible in one direction.
+   '''
+   class Node 
+   {
+     public:
+      int data;
+      Node *next;
+
+     Node(int val)
+     {
+      data = val;
+      next = nullptr;
+     }
+   };
+   '''
+
+2. Doubly Linked List:
+   * Each node points to both the next and previous nodes.
+   * Traversal can be done in both directions.
+    '''
+      class Node 
+      {
+      public:
+        int data;
+        Node *next;
+        Node *pre;
+
+      Node(int val)
+        {
+         data = val;
+         next = nullptr;
+         pre = nullptr;
+        }
+      };
+      '''
+
+3. Circular Linked List:
+   * The last node points back to the first node, forming a circular structure.
+   '''
+   void insert(int data){
+        Node* newNode = new Node(data);
+        if (head == nullptr) {
+            head = newNode;
+            newNode->next = head;
+        } else {
+            Node* temp = head;
+            while (temp->next != head) {
+                temp = temp->next;
+            }
+            temp->next = newNode;
+            newNode->next = head;
+        }
+   }
+   '''
+   "Rest of the part of defining and creating obj is same as others."
+     
+#creating an element of linked list with "new" operator:
+'''  Node *n = new Node(98); //here data = 98 and next = nullptr '''
+#Creating a null obj in linked list:
+''' Node* n  = nullptr;'''//here whole node is null.
+
+# Operations of a linked list:
+  1.insertion:
+    '''
+    void insertion(int val)
+    {
+       Node* n = new Node(val);
+    Node* temp = head;
+
+    if(head == nullptr)
+    {
+        head = n;
+    }
+
+    else{
+    while(temp->next != nullptr)
+    {
+        temp = temp->next;
+    }
+
+    temp->next = n;
+    }
+    }
+    '''
+  2.removal:
+    for tail:
+    '''
+    void removetail()
+    {
+        Node* temp = head;
+
+        while(temp->next->next != nullptr)
+        {
+            temp = temp->next;
+        }
+        
+        int n = temp->next->data;
+        temp->next = nullptr;
+        return n;
+    }
+
+    for head:
+    void removehead()
+    {
+      head->next = head->next->next;
+    }
+    '''
+
+    3.Display:
+    '''
+    void display()
+    {
+      for(Node* temp=head;temp!=nullptr;temp=temp->next)
+    {
+        std::cout<<temp->data<<"-";
+    }
+    std::cout<<"NULL"<<std::endl;
+    }
+    '''
+
+    4.Search:
+    '''
+    bool search(int val)
+    {
+      for(Node* temp=head;temp!=nullptr;temp=temp->next)
+      {
+        if(temp->data == val)
+        {
+          return true;
+        }
+      }
+      return false;
+    }
+    '''
