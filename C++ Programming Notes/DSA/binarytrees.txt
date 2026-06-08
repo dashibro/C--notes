@@ -1,0 +1,36 @@
+# Tree:
+    In Data Structures and Algorithms (DSA), a Tree is a non-linear, hierarchical data structure made up of nodes connected by 
+    edges, where the topmost node is called the root and every other node is organized in parent–child relationships. Trees are 
+    widely used in searching, sorting, hierarchical storage (like file systems), and efficient data retrieval.
+
+# Diffrent Nodes:
+    1.Root Node: The topmost node, with no parent.
+
+    2.Parent Node: A node that has child nodes.
+
+    3.Child Node: A node that descends from a parent.
+
+    4.Leaf Node: A node with no children.
+
+    5.Edge: The connection between two nodes.
+
+    6.Level: Distance from the root (root is level 0).
+
+    7.Height: Longest path from root to a leaf.
+
+    8.Subtree: A node and all its descendants.
+
+# Type of Trees:
+    1.Binary tree: It have a most 2 child nodes.
+    
+    2.Binary search tree(BST): left child < parent < right child, its used for fast searching in Trees
+
+    3.AVL Trees: self balancing BST , makes inssertion and searching efficient
+    
+    4.Red-black Tree: Balanced BST with color rules, used in database and compilers
+
+    5.Heap(Binary Heap): A complete binary tree used for priority
+
+    6.N-ary Tree: Each node can have n children, DOM file systems
+
+    7.B-tree/B+ Tree: Multi ways Balanced tree
